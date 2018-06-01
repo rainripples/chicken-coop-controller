@@ -11,5 +11,5 @@ The pi controller is contained within a 3d printed enclosure which also contains
 
 In order to attach the antenna end to the door a 3d printed universal joint is used to allow for flex. It should possible to use this for both regular hinged doors as well as doors that slide.
 
-#Installation
+# Installation
 I barely know how to get the data into github at the moment but hopefully this thing will be packagized soon.
