@@ -10,3 +10,6 @@ It is intented the that PI will have a real time clock added to it such that if 
 The pi controller is contained within a 3d printed enclosure which also contains a relay and and some circuitary to split off 5v from a 12v power supply.
 
 In order to attach the antenna end to the door a 3d printed universal joint is used to allow for flex. It should possible to use this for both regular hinged doors as well as doors that slide.
+
+#Installation
+I barely know how to get the data into github at the moment but hopefully this thing will be packagized soon.
