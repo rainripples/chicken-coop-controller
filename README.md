@@ -12,4 +12,23 @@ The pi controller is contained within a 3d printed enclosure which also contains
 In order to attach the antenna end to the door a 3d printed universal joint is used to allow for flex. It should possible to use this for both regular hinged doors as well as doors that slide.
 
 # Installation
-I barely know how to get the data into github at the moment but hopefully this thing will be packagized soon.
+1 - Set up appache webserver and copy scripts to /var/www/html/
+
+2 - setup job scheduller
+  nano Crontab -e
+  paste in two lines below at bottom  
+  * * * * * /usr/bin/php "/var/www/html/door_schedule.php" >/dev/null 2>&1
+ @reboot sh /home/pi/launcher.sh >/dev/null 2>&1
+
+chmod 777 /var/www/html/door_schedule.php
+copy launcher.sh to /home/pi
+chmod 777 /home/pi/launcher.sh
+
+sudo raspi-config -> Interfacing options -> enable camera.
+
+Install Dave Jones Pistreaming check readme-> https://github.com/waveform80/pistreaming/blob/master/README.md
+sudo apt-get install libav-tools git python3-picamera python3-ws4py
+git clone https://github.com/waveform80/pistreaming.git
+
+
+      
